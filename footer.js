@@ -130,7 +130,7 @@ function footer_row1_box3(footerRow1){
                 input.type="text";
                 input.id="fname;"
                 input.name="name";
-                input.placeholder="שם מלא";
+                input.placeholder="שם מלא*";
                 input.required="true";
             break;
             case 2:
@@ -143,7 +143,7 @@ function footer_row1_box3(footerRow1){
                 input.type="text";
                 input.id="phone;"
                 input.name="phone";
-                input.placeholder="טלפון";
+                input.placeholder="טלפון*";
                 input.required="true";
             break;
             case 4:
