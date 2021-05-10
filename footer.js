@@ -205,6 +205,6 @@ function footer_row2(){
 function footer_row3(){
     const footerRow3 = document.createElement('div');
     footerRow3.setAttribute("class","footer-row3 flex-row wrap");
-    footerRow3.innerHTML ='<h4> © 2021 כל הזכויות שמורות. פאר דיימונדס . נבנה ע״י עידן לוי. </h4>';
+    footerRow3.innerHTML ='<h4> © 2021 כל הזכויות שמורות. פאר דיימונדס.  </h4> <h4> נבנה ע״י עידן לוי. </h4>';
     footer.appendChild(footerRow3);
 }
