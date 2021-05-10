@@ -1,0 +1,410 @@
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+/*********************** header ***************************/
+.header{
+    background-color:black;
+    color:white;
+    justify-content: space-around;
+    align-items: center;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.header .title h5{
+    text-align: center;
+}
+
+.header .title #h5-row1{
+    color:white; 
+    margin-bottom:8px;
+}
+
+.header .title #h5-row2{
+    color:gold; 
+}
+
+/*********************** topbar ***************************/
+.topnav {
+    /* display:flex;
+    justify-content: center; */
+    overflow: hidden;
+    background-color: #000000e7;
+}
+
+.topnav a{
+    float: right; 
+     display: block;
+    /* margin:0px 10px 0px 10px; */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.topnav .icon {
+    display: none;
+}
+  
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+  
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000e7;
+    opacity: 0.85;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    color:white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+  
+.topnav a:hover,.dropdown-content a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+
+/*********************** main ***************************/
+.main > .main-part1{
+    background-color:black;
+    position: relative; 
+    /* position: sticky;  */
+}
+
+/*********************** main-part1 ***************************/
+.main > .main-part1 > img{
+    width: 100%;
+    max-height: 450px;
+    height: auto;
+}
+
+.main > .main-part1 > .image-title{
+    color: white;
+    text-shadow: 2px 2px black;
+    position: absolute; /*holding the text on the image */
+    display: block;
+    align-self: center;
+    padding: 0px 10px 0px 10px;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+}
+
+.main > .main-part1 > .image-title> h2{
+    color: #eea114;
+    margin-top: 5px;
+}
+
+.main > .main-part1 > .image-title> p{
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+/*********************** main-part2 ***************************/
+.main > .main-part2{
+    width: 100%;;
+    /* background-color: rgb(223, 226, 8); */
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.main > .main-part2> .main-part2-row{
+    justify-content: center;
+}
+
+.main > .main-part2> .main-part2-row> .rings{
+    background-color: white;
+    box-shadow: 1px 1px 2px 2px gray;
+    width:264px;
+    align-items:center; 
+    justify-content: space-between;
+    margin:20px;
+}
+
+.main > .main-part2> .main-part2-row>.rings img{
+    margin-top:8px;
+    width:240px;
+    height:240px;
+} 
+
+
+.main > .main-part2> .main-part2-row> .rings:hover img{
+    transform: scale(1.05); /* (105% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    opacity: 0.9;
+}
+
+.main > .main-part2> .main-part2-row> .rings:hover{
+    box-shadow: 2px 2px 4px 4px #dbad50;
+}
+
+.main > .main-part2> .main-part2-row> .rings > .description{
+    font-weight:bold;
+    align-items:center;
+    font-size: 18px;
+    color:#6b4b10;
+}
+
+.main > .main-part2> .main-part2-row> .rings > .price{
+    margin:10px 0px 10px 0px;
+    font-size: 22px;
+}
+
+ /*********************** footer ***************************/
+.footer{
+    background-color: black;
+    color: white;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+.footer .footer-row1{
+        background-color: #80808025;
+        justify-content: space-around;
+        padding-bottom: 20px;
+}
+
+.footer .footer-row1 .footer-row1-box1 h3, 
+.footer .footer-row1 .footer-row1-box2 h3,
+.footer .footer-row1 .footer-row1-box3 h3{
+    margin:10px 0px 10px 0px;
+    color:#e4ad48;
+}
+
+.footer .footer-row1 a {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.footer .footer-row1 .footer-row1-box2{
+    width:400px;
+}
+
+.footer .footer-row1 .footer-row1-box2 a{
+    align-self:flex-end;
+}
+
+.footer .footer-row1 .footer-row1-box3 {
+    border-radius: 5px;
+    width:221px;
+}
+
+.footer .footer-row2{
+    padding: 20px 0px 20px 0px;
+    justify-content: space-around;
+}
+
+.footer .footer-row2 a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.footer .footer-row2 .footer-box{
+    /* background-color:gray; */
+    align-items: center;
+    padding:10px;
+}
+
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #69696954;
+    color:black;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    resize: vertical;
+  }
+
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #000000ad;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    color:gray;
+  }
+
+
+.footer .footer-row3{
+    justify-content:center;
+    padding: 20px 0px 20px 0px;
+}
+
+
+
+
+@media screen and (max-width: 912px) {
+    .main > .main-part2> .main-part2-row>.rings img{
+    min-height: 300px;
+    }
+    /* .main > .main-part1 > .image-title> p{
+        font-size:20px;
+    } */
+}
+
+
+/* Responsive layout - when the screen is less than 1000px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+.main {   
+    flex-direction: column;
+}
+
+/* .main > .main-part1> img {
+    /* width: 100%; */
+    /* margin: 0; 
+} */
+
+ /* .main > .main-part1 > .image-title{
+    margin-right: 0px;;
+}  */
+
+/* .main > .main-part1 > .image-title p{
+    font-size: 12px;
+    display: block;
+} */
+
+
+
+.main > .main-part2> .main-part2-row>.rings img{
+    height: 200px;
+   }
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width:870px) and (max-width:1000px) {
+/*********************** header ***************************/   
+    .header .title{
+        width: 350px;
+    }
+
+    .header > .title> h5{
+        font-size:15px;
+    }
+
+    .header a img{
+        height: auto;
+    }
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width:701px) and (max-width:869px) {
+/*********************** header ***************************/   
+    .header .title{
+        display:none;
+    }
+}
+    
+   
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+/*********************** header ***************************/
+    .header > .title{
+        display:none;
+    }  
+
+/*********************** topbar ***************************/
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: left;
+      display: block;
+    }
+  
+/*********************** main ***************************/
+    .main > .main-part1 > .image-title> h2{
+        font-size: 3.5vw; /*Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width*/
+    }
+
+    .main > .main-part1 > .image-title> p{
+        font-size: 3.0vw; /*Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width*/
+    }
+}
+
+
+  
+  @media screen and (max-width: 700px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
