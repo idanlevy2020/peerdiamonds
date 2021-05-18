@@ -118,8 +118,6 @@ function footer_row1_box3(footerRow1){
     const form = document.createElement('form');
     form.setAttribute("action"," ");
 
-    console.log("form:",form);
-
     let textarea=null;
     let input=null;
     for (let i=1;i<=5;i++){
@@ -131,7 +129,7 @@ function footer_row1_box3(footerRow1){
                 input.id="fname;"
                 input.name="name";
                 input.placeholder="שם מלא*";
-                input.required="true";
+                input.required="true";  //required
             break;
             case 2:
                 input.type="text";
@@ -144,7 +142,7 @@ function footer_row1_box3(footerRow1){
                 input.id="phone;"
                 input.name="phone";
                 input.placeholder="טלפון*";
-                input.required="true";
+                input.required="true"; //required
             break;
             case 4:
                 textarea=document.createElement("textarea");
@@ -191,7 +189,7 @@ function footer_row2(){
                 footerBox.innerHTML='<img src="icons/phone.png"/> <a href="tel:054-9919289"> 054-9919289 </a>';
               break;
             case 3:
-                footerBox.innerHTML='<img src="icons/email.png"/> <p>  דואר אלקטרוני: <a href="mailto:info@peerdiamonds.co.il"> info@peerdiamonds.co.il </a> </p>';
+                footerBox.innerHTML='<img src="icons/email.png"/> <p>  דואר אלקטרוני: <a href="mailto:idan.peerdiamonds@gmail.com"> idan.peerdiamonds@gmail.com </a> </p>';
             break;
             case 4:
                 footerBox.innerHTML='<img src="icons/clock.png"/> <p> שעות פתיחה: א-ה: 09:00-18:00, ו: 09:00-13:00 </p>';
