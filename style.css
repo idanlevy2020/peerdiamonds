@@ -115,14 +115,13 @@
 .main > .main-part1{
     background-color:black;
     position: relative; 
-    /* position: sticky;  */
+    width: 100%;
 }
 
 /*********************** main-part1 ***************************/
 .main > .main-part1 > img{
     width: 100%;
-    max-height: 450px;
-    height: auto;
+    max-height: 400px;
 }
 
 .main > .main-part1 > .image-title{
